@@ -1,7 +1,7 @@
 # Memory Game (Genius style)
 ***
 ### Deployment URL
-Access the game clicking here: https://cjbiohacker.github.io/Memory-Game-Genius/ .
+Access the game by clicking here: https://cjbiohacker.github.io/Memory-Game-Genius/ . <br>
 Please share if you liked it and give me a feedback.
 
 ### How to Play
