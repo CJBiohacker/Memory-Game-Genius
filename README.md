@@ -1,10 +1,10 @@
-# Jogo da Memória (Estilo Genius)
+# Memory Game (Genius style)
 ***
-### Como Jogar
-<p> Após o carregamento da página, digite seu nome na janela de "alerta" e aguarde a sequência de cor(es) começar. Clique na(s) cor(es) correspondente(s) para pontuar. Conforme for acertando, mais uma das cores é adicionada na sequência até onde você conseguir acertar. Caso você erre, o jogo reinicia, voltando à janela inicial requerendo o nome. </p>
+### How to Play
+<p> After the page loads, type your name in the "alert" screen and await the color sequence to start. Click in the matching color to score it. As you score it, plus one color is added in the sequence 'til where you can get it done. If you do mistake the right color, you lose and the game restart, reloading the initial screen requiring a name.</p>
 
-### Descrição
-<p> Este projeto, orientado pela Gabriela Pinheiro, consistia em desenvolver o jogo da memória Genius, utilizando o que já apelidei carinhosamente de “Trio da Web” (HTML, CSS e JavaScript). O código foi desenvolvido em cima do que foi apresentado pela instrutora, com a liberdade criativa pra adicionar mais funcionalidades e trabalhar no lado mais “Frontend” do projeto.
+### Description
+<p> This project, oriented by Gabriela Pinheiro, consisted in develop the memory game Genius, using who i affectionately nicknamed "Web Trio" (HTML, CSS e JavaScript). The code was developed O código foi desenvolvido em cima do que foi apresentado pela instrutora, com a liberdade criativa pra adicionar mais funcionalidades e trabalhar no lado mais “Frontend” do projeto.
 Listando o que foi adicionado/modificado:
 <ul>
 <li>Design customizado, semelhante ao brinquedo/jogo Genius real.</li>
