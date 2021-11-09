@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./GeniusFavicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+    <title>Jogo da Memória Genius</title>
+</head>
+
+<body>
+    <div class="background">
+        <!-- Placar com Nome, Pontuação e Nível atual do jogador. -->
+        <aside class="scoreboard">
+            <div class="player">
+                <span id="player-text">Jogador(a):</span>
+                <div id="player-name">-</div>
+            </div>
+            <div class="score">
+                <span id="score-text">Pontuação</span>
+                <div id="score-count">0</div>
+            </div>
+            <div class="level">
+                <span id="level-text">Nível</span>
+                <div id="level-count">-</div>
+            </div>
+        </aside>
+        <!-- Bloco visual dos botões coloridos -->
+        <div class="main-screen">
+            <div class="core-screen">
+                <button type="button" class='green'><span>VERDE</span></button>
+                <button type="button" class='red'><span>VERMELHO</span></button>
+                <button type="button" class='blue'><span>AZUL</span></button>
+                <button type="button" class='yellow'><span>AMARELO</span></button>
+            </div>
+        </div>
+        <div class="center-screen"></div>
+
+        <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

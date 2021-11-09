@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background-color: #cfe0e8;
+}
+body .background {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+body .background .scoreboard {
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  color: #0a0a5f;
+  margin-left: -375px;
+  padding: 20px 20px 20px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #21f0ca, #53a1c5);
+  box-shadow: 5px 5px 10px #e9e9e9, -5px -5px 10px #fdfdfd;
+}
+body .background .scoreboard .player {
+  text-align: center;
+  margin-bottom: 25px;
+}
+body .background .scoreboard .score {
+  text-align: center;
+}
+body .background .scoreboard .level {
+  text-align: center;
+}
+body .background .main-screen {
+  margin-left: 0px;
+  border: 0px solid white;
+  background-color: black;
+  box-shadow: 5px 5px 10px #e9e9e9, -5px -5px 10px #fdfdfd;
+  border-radius: 100%;
+  height: 635px;
+  width: 635px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .background .main-screen .core-screen {
+  display: grid;
+  grid-template-areas: "green red" "yellow blue";
+  gap: 15px;
+  margin-left: 5px;
+  border: 0px solid white;
+  background-color: black;
+  border-radius: 100%;
+  height: 600px;
+  width: 600px;
+}
+body .background .main-screen .core-screen button {
+  font-family: "Nunito", sans-serif;
+  background: #60202b;
+  border-radius: 7px;
+  border: none;
+  padding: 0;
+  outline-offset: 20px;
+}
+body .background .main-screen .core-screen button span {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+}
+body .background .main-screen .core-screen .green {
+  grid-area: green;
+  background-color: #03d534;
+  border-top-left-radius: 100%;
+}
+body .background .main-screen .core-screen .green:active {
+  transform: translateX(5px) translateY(5px);
+}
+body .background .main-screen .core-screen .green.selected {
+  background: #63f585;
+  box-shadow: 0 0 10px #63f585, 0 0 40px #63f585, 0 0 80px #63f585, 0 0 160px #63f585;
+}
+body .background .main-screen .core-screen .red {
+  grid-area: red;
+  background-color: #f91e08;
+  border-top-right-radius: 100%;
+}
+body .background .main-screen .core-screen .red:active {
+  transform: translateX(-5px) translateY(5px);
+}
+body .background .main-screen .core-screen .red.selected {
+  background: #f8766b;
+  box-shadow: 0 0 10px #f8766b, 0 0 40px #f8766b, 0 0 80px #f8766b, 0 0 160px #f8766b;
+}
+body .background .main-screen .core-screen .blue {
+  grid-area: blue;
+  background-color: #04c7e7;
+  border-bottom-right-radius: 100%;
+}
+body .background .main-screen .core-screen .blue:active {
+  transform: translateX(-5px) translateY(-5px);
+}
+body .background .main-screen .core-screen .blue.selected {
+  background: #7bd3e1;
+  box-shadow: 0 0 10px #7bd3e1, 0 0 40px #7bd3e1, 0 0 80px #7bd3e1, 0 0 160px #7bd3e1;
+}
+body .background .main-screen .core-screen .yellow {
+  grid-area: yellow;
+  background-color: #e2e60d;
+  border-bottom-left-radius: 100%;
+}
+body .background .main-screen .core-screen .yellow:active {
+  transform: translateX(5px) translateY(-5px);
+}
+body .background .main-screen .core-screen .yellow.selected {
+  background: #fdff8e;
+  box-shadow: 0 0 10px #fdff8e, 0 0 40px #fdff8e, 0 0 80px #fdff8e, 0 0 160px #fdff8e;
+}
+body .background .center-screen {
+  margin-left: -475px;
+  border: 0px solid white;
+  background-color: black;
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  transform: translateZ(10px);
+}
+
+/*# sourceMappingURL=style.css.map */

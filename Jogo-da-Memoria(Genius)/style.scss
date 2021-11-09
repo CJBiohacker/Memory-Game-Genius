@@ -1,0 +1,177 @@
+// VARIÁVEIS DO PROJETO
+$bt-vm: #f91e08;
+$bt-vd: #03d534;
+$bt-az: #04c7e7;
+$bt-am: #e2e60d;
+$fonte:"Nunito", sans-serif;
+
+body {
+  margin: 0;
+  background-color: #cfe0e8;
+
+  .background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;                  // Aplica a organização dos elementos em bloco, ocupando o espaço máximo dentro da div.
+    justify-content: center;        // Centraliza o bloco visual dos botões na horizontal.
+    align-items: center;            // Centraliza o bloco visual dos botões na vertical.
+    column-gap: 50px;               // Espaçamento entre o Placa e os Botões do jogo.
+
+    .scoreboard {
+      font-family: $fonte;
+      font-size: 25px;
+      color: rgb(10, 10, 95);
+
+      margin-left: -375px;
+      padding: 20px 20px 20px;
+      border-radius: 5px;
+
+      background: linear-gradient(145deg, #21f0ca, #53a1c5);
+      box-shadow: 5px 5px 10px #e9e9e9, -5px -5px 10px #fdfdfd;
+
+      .player {
+        text-align: center;
+        margin-bottom: 25px;
+
+        .player-text {
+          .player-name {
+          }
+        }
+      }
+
+      .score {
+        text-align: center;
+
+        .score-text {
+        
+        }
+
+        .score-count {
+         
+        }
+      }
+
+      .level {
+        text-align: center;
+
+        .level-text {
+        
+        }
+        
+        .level-count {
+          
+        }
+      }
+    }
+    
+    .main-screen {
+      margin-left: 0px;
+      border: 0px solid white;
+      background-color:black;
+      box-shadow: 5px 5px 10px #e9e9e9,
+      -5px -5px 10px #fdfdfd;
+      border-radius: 100%;                  // Raio da borda, criando formato circular. (Semelhante ao formato do jogo Genius)
+      height: 635px;
+      width: 635px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .core-screen {
+        display: grid;                        // Organiza em grade os 'botões' dentro da 'div'.
+        grid-template-areas:                  // Organiza a distribuição da grade em 'quarteto' com os nomes identificadores.
+          "green red"
+          "yellow blue";
+        gap: 15px;                            // Espaçamento entre cada botão colorido, no 'quarteto'.
+        margin-left: 5px;
+        border: 0px solid white;
+        background-color:black;
+        border-radius: 100%;                  // Raio da borda, criando formato circular. (Semelhante ao formato do jogo Genius)
+        height: 600px;
+        width: 600px;
+
+        button {
+          font-family: $fonte;
+          background: hsl(350deg 50% 25%);
+          border-radius: 7px;
+          border: none;
+          padding: 0;
+          outline-offset: 20px;
+
+          span {                      // Formatação do texto dos botões. 
+            font-family: $fonte;
+            font-size: 32px;
+
+          }
+        }
+        
+        .green {
+          grid-area: green;                 // Atribui o nome identificador 'green' da propriedade 'grid-template-areas' à este elemento.
+          background-color: $bt-vd;           // Define a cor de fundo.
+          border-top-left-radius: 100%;       // Define o raio da borda, seguindo a orientação circular. (Topo-Esquerda)
+
+          &:active {
+            transform: translateX(5px) translateY(5px);
+          }
+          &.selected {
+            background: #63f585;
+            box-shadow: 0 0 10px #63f585,0 0 40px #63f585, 0 0 80px #63f585, 0 0 160px #63f585 ;
+          } 
+        }
+        
+        .red {
+          grid-area: red;                     // Atribui o nome identificador 'red' da propriedade 'grid-template-areas' à este elemento.
+          background-color: $bt-vm;             // Define a cor de fundo.
+          border-top-right-radius: 100%;        // Define o raio da borda, seguindo a orientação circular. (Topo-Direita)
+
+          &:active {
+            transform: translateX(-5px) translateY(5px);
+          }
+          &.selected {
+            background: #f8766b;
+            box-shadow: 0 0 10px #f8766b,0 0 40px #f8766b, 0 0 80px #f8766b, 0 0 160px #f8766b ;
+          } 
+        }
+
+        .blue {
+          grid-area: blue;                      // Atribui o nome identificador 'blue' da propriedade 'grid-template-areas' à este elemento.
+          background-color: $bt-az;               // Define a cor de fundo.
+          border-bottom-right-radius: 100%;       // Define o raio da borda, seguindo a orientação circular. (Fundo-Direita)
+
+          &:active {
+            transform: translateX(-5px) translateY(-5px);
+          }
+          &.selected {
+            background: #7bd3e1;
+            box-shadow: 0 0 10px #7bd3e1,0 0 40px #7bd3e1, 0 0 80px #7bd3e1, 0 0 160px #7bd3e1 ;
+          } 
+        }
+
+        .yellow {
+          grid-area: yellow;                     // Atribui o nome identificador 'yellow' da propriedade 'grid-template-areas' à este elemento.
+          background-color: $bt-am;                // Define a cor de fundo.
+          border-bottom-left-radius: 100%;         // Define o raio da borda, seguindo a orientação circular. (Fundo-Esquerda)
+
+          &:active {
+            transform: translateX(5px) translateY(-5px);
+          }
+          &.selected {
+            background: #fdff8e;
+            box-shadow: 0 0 10px #fdff8e,0 0 40px #fdff8e, 0 0 80px #fdff8e, 0 0 160px #fdff8e ;
+          } 
+        }
+      }  
+    }
+
+    .center-screen {
+      margin-left: -475px;
+      border: 0px solid white;
+      background-color:black;
+      border-radius: 100%;                  // Raio da borda, criando formato circular. (Semelhante ao formato do jogo Genius)
+      height: 200px;
+      width: 200px;
+      transform: translateZ(10px);
+
+    }
+  }
+}
