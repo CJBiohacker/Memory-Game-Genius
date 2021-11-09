@@ -25,7 +25,7 @@ let randomizarOrdem = () => {
 
 // Contador de tempo pra iluminar e apagar a cor.
 let iluminarCor = (elemento, numero) => {
-    numero = numero * 500;
+    numero = numero * 750;
     setTimeout(() => {
         elemento.classList.add('selected');
     }, numero - 250);
