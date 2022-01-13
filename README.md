@@ -23,7 +23,7 @@ Listando o que foi adicionado/modificado:
 </p>
 
 #### en-US
-## Memory Game (Genius style)
+# Memory Game (Genius style)
 ***
 ### Deployment URL
 Access the game by clicking here: https://cjbiohacker.github.io/Memory-Game-Genius/ . <br>
