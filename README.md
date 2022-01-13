@@ -1,5 +1,5 @@
-#pt-BR
-## Jogo da Memória (Estilo Genius)
+#### pt-BR
+# Jogo da Memória (Estilo Genius)
 ***
 ### URL de Implementação
 Acesse o jogo clicando aqui: https://cjbiohacker.github.io/Memory-Game-Genius/ . <br>
@@ -22,7 +22,7 @@ Listando o que foi adicionado/modificado:
 
 </p>
 
-# en-US
+#### en-US
 ## Memory Game (Genius style)
 ***
 ### Deployment URL
